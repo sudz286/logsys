@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "6284c1d1773f972226bf2593b6ea20d9b0964c3d5ecf0cc80731b106f0876976"
+            "sha256": "e84214754d43018f574e8687778429bfcb849b28d055c23713e2ceeac9bd1dbc"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,6 +31,14 @@
             ],
             "index": "pypi",
             "version": "==3.1"
+        },
+        "django-annoying": {
+            "hashes": [
+                "sha256:083b5e26f140f86178fcb47931f69b7ff75181ccd1e318d9c218ae9babc1805e",
+                "sha256:e230f28fec0559b4fdb621ff202068a78170ada2ac1ec7a73ba822cc1f737791"
+            ],
+            "index": "pypi",
+            "version": "==0.10.6"
         },
         "django-crispy-forms": {
             "hashes": [
@@ -88,6 +96,14 @@
                 "sha256:c35965d010ce31b23eeb663ed3cc8c906275d6be1a34393a1d73a41febf4a048"
             ],
             "version": "==2020.1"
+        },
+        "six": {
+            "hashes": [
+                "sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259",
+                "sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced"
+            ],
+            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
+            "version": "==1.15.0"
         },
         "sqlparse": {
             "hashes": [

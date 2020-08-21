@@ -6,11 +6,11 @@
 		<title>Login</title>
 	</head>
 	<body>
-		<div>
+		<div class ="container">
 			<form method = "POST">
 				{% csrf_token %}
 				{{ form|crispy }}
-				<button type = "submit">Login</button>
+				<button type = "submit" class = "btn btn-dark">Login</button>
 			</form>
 			<div>
 				<p>Don't have an account?<a href = "{% url 'register' %}" >Register</a></p>

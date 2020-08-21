@@ -1,7 +1,7 @@
 from django import forms
 from .models import MyUser
 from django.contrib.auth.forms import UserCreationForm
-# from phonenumber_field.formfields import PhoneNumberField
+
 
 class UserRegisterForm(UserCreationForm):
 	email = forms.EmailField()

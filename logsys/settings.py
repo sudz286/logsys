@@ -122,14 +122,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# CRISPY_TEMPLATE_PACK = 'bootstrap2'
+
+LOGIN_REDIRECT_URL = 'home'
+
+LOGIN_URL = 'login'
+
+AUTH_USER_MODEL = 'users.MyUser'
+
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 MEIDA_URL = '/media/'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
-
-LOGIN_REDIRECT_URL = 'home'
-LOGIN_URL = 'login'
-# LOGOUT_REDIRECT_URL = 'login'
-
-AUTH_USER_MODEL = 'users.MyUser'
