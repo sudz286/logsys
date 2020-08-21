@@ -8,12 +8,14 @@
 	<body>
 		<div class ="container">
 			<form method = "POST">
-				{% csrf_token %}
-				{{ form|crispy }}
+				<div class="form-group">
+					{% csrf_token %}
+					{{ form|crispy }}
+				</div>
 				<button type = "submit" class = "btn btn-dark">Login</button>
 			</form>
 			<div>
-				<p>Don't have an account?<a href = "{% url 'register' %}" >Register</a></p>
+				<p>Don't have an account? <a href = "{% url 'register' %}" >Register</a></p>
 			</div>
 		</div>
 		

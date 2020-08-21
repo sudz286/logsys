@@ -17,7 +17,7 @@
 				<a class = "navbar-brand" href = "{% url 'home' %}">LOGSYS</a>
 				<ul class=”navbar-nav” style="list-style: none";>
 					<li class=”nav-item”>
-						<a class = "nav-link" href = "{% url 'logout' %}">Logout</a>
+						<a class = "nav-link" href = "{% url 'logout' %}" style="color:white;">Logout</a>
 					</li>
 				</ul>
 			</nav>
@@ -31,9 +31,9 @@
 						<form method = "post" enctype="multipart/form-data">
 							<div class = "form-group">
 							    {% csrf_token %} 
-							    {{ profile_form|crispy }} 
-						        <button type="submit">Upload</button> 
-					    	</div>
+							    {{ profile_form|crispy }}
+							</div> 
+						    <button type="submit">Upload</button> 
 				   		</form>	
 				   		<h5 class="card-title">Welcome</h5>
 						<h5 class = "card-body">{{ user.first_name }} {{user.last_name}}</h5>
